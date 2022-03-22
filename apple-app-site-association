@@ -20,7 +20,7 @@
             "comment": "Matches any URL whose path starts with /verificatie/registratie/"
           },
           {
-            "/": "/token/verification_key/*",
+            "/": "/batman/*",
             "comment": "Matches any URL whose path starts with /token/verification_key/"
           },
 	  {
