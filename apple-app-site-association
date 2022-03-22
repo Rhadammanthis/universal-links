@@ -1,11 +1,45 @@
 {
-	"applinks": {
-		"apps": [],
-		"details": [
-			{
-				"appID": "KFCNEC27GU.com.razeware.UniveralLinksTutorial",
-				"paths": [ "*"]
-			}
-		]
-	}
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "UR624X5D5T.nl.actify.friesland.dev",
+          "UR624X5D5T.nl.actify.friesland.prod"
+        ],
+        "components": [
+          {
+            "/": "/wachtwoordreset/*",
+            "comment": "Matches any URL whose path starts with /wachtwoordreset/"
+          },
+          {
+            "/": "/verificatie/veranderemail/*",
+            "comment": "Matches any URL whose path starts with /verificatie/veranderemail/"
+          },
+          {
+            "/": "/verificatie/registratie/*",
+            "comment": "Matches any URL whose path starts with /verificatie/registratie/"
+          },
+          {
+            "/": "/token/verification_key/*",
+            "comment": "Matches any URL whose path starts with /token/verification_key/"
+          },
+	  {
+            "/": "/test/*",
+	    "?": { "some": "???" },
+            "comment": "Matches any URL whose path starts with /token/verification_key/"
+          },
+	  {
+            "/": "/prueb/*",
+	    "?": { "other": "??????" },
+            "comment": "Matches any URL whose path starts with /token/verification_key/"
+          },
+          {
+            "/": "/teams/activeren/*",
+            "?": { "qr": "?*" },
+            "comment": "Matches any URL whose path starts with /teams/activeren/ and which has a query item with the name 'qr'"
+          }
+        ]
+      }
+    ]
+  }
 }
